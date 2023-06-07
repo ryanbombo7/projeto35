@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    
+    <script src="p5.play.js"></script>
+    
+<!-- O SDK JS do Firebase principal é sempre necessário e deve ser listado primeiro -->
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+
+<!-- FAZER: Adicionar SDKs para produtos Firebase que você deseja usar
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+ // Configuração do Firebase do seu aplicativo da web
+ 
+  // Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyCcaEngYT9KDmYd4SJ8492oo5a3IAE2hEA",
+  authDomain: "balao-bf8be.firebaseapp.com",
+  databaseURL: "https://balao-bf8be-default-rtdb.firebaseio.com",
+  projectId: "balao-bf8be",
+  storageBucket: "balao-bf8be.appspot.com",
+  messagingSenderId: "659460381454",
+  appId: "1:659460381454:web:ef147be90e45d90d6a955f"
+};
+  // Inicializar Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+      <script src="sketch.js"></script>
+    </body>
+</html>
